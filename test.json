@@ -1,0 +1,1820 @@
+[
+    {
+        "sha256:3af126ec1702291a315032282a8b261d039d9f9a215ce4eccd0fe1d1f2490229": {
+            "docker.io/jvalance/elasticsearch:7.6.1-testing": [
+                {
+                    "detail": {
+                        "policy": {
+                            "blacklisted_images": [], 
+                            "description": "Default", 
+                            "id": "e0c047f7-7d7b-4e7c-b632-003dd4170441", 
+                            "last_updated": 1597267327, 
+                            "mappings": [
+                                {
+                                    "id": "3e98f26c-508e-4a8f-8ca1-b8a4c66a994a", 
+                                    "image": {
+                                        "type": "tag", 
+                                        "value": "*"
+                                    }, 
+                                    "name": "default", 
+                                    "policy_ids": [
+                                        "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                    ], 
+                                    "registry": "*", 
+                                    "repository": "*", 
+                                    "whitelist_ids": [
+                                        "d9e27a9b-45f2-4938-baa4-dfce6da979f1"
+                                    ]
+                                }
+                            ], 
+                            "name": "Default", 
+                            "policies": [
+                                {
+                                    "comment": "", 
+                                    "id": "064dd2d3-6510-4ebd-9492-8c2c4defedf4", 
+                                    "name": "DefaultPolicy", 
+                                    "rules": [
+                                        {
+                                            "action": "STOP", 
+                                            "gate": "vulnerabilities", 
+                                            "id": "c525c524-89c3-4445-9524-8cfdb34d0e12", 
+                                            "params": [
+                                                {
+                                                    "name": "package_type", 
+                                                    "value": "all"
+                                                }, 
+                                                {
+                                                    "name": "severity_comparison", 
+                                                    "value": ">"
+                                                }, 
+                                                {
+                                                    "name": "severity", 
+                                                    "value": "medium"
+                                                }
+                                            ], 
+                                            "trigger": "package"
+                                        }
+                                    ], 
+                                    "version": "1_0"
+                                }
+                            ], 
+                            "version": "1_0", 
+                            "whitelisted_images": [], 
+                            "whitelists": [
+                                {
+                                    "comment": "NVD test", 
+                                    "id": "d9e27a9b-45f2-4938-baa4-dfce6da979f1", 
+                                    "items": [
+                                        {
+                                            "gate": "vulnerabilities", 
+                                            "id": "2232c815-e9ba-46e6-ae5e-b649514484ff", 
+                                            "trigger_id": "*https://nvd*"
+                                        }
+                                    ], 
+                                    "name": "NVDTestWhitelist", 
+                                    "version": "1_0"
+                                }
+                            ]
+                        }, 
+                        "result": {
+                            "bundle": {
+                                "blacklisted_images": [], 
+                                "description": "Default", 
+                                "id": "e0c047f7-7d7b-4e7c-b632-003dd4170441", 
+                                "last_updated": 1597267327, 
+                                "mappings": [
+                                    {
+                                        "id": "3e98f26c-508e-4a8f-8ca1-b8a4c66a994a", 
+                                        "image": {
+                                            "type": "tag", 
+                                            "value": "*"
+                                        }, 
+                                        "name": "default", 
+                                        "policy_ids": [
+                                            "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                        ], 
+                                        "registry": "*", 
+                                        "repository": "*", 
+                                        "whitelist_ids": [
+                                            "d9e27a9b-45f2-4938-baa4-dfce6da979f1"
+                                        ]
+                                    }
+                                ], 
+                                "name": "Default", 
+                                "policies": [
+                                    {
+                                        "comment": "", 
+                                        "id": "064dd2d3-6510-4ebd-9492-8c2c4defedf4", 
+                                        "name": "DefaultPolicy", 
+                                        "rules": [
+                                            {
+                                                "action": "STOP", 
+                                                "gate": "vulnerabilities", 
+                                                "id": "c525c524-89c3-4445-9524-8cfdb34d0e12", 
+                                                "params": [
+                                                    {
+                                                        "name": "package_type", 
+                                                        "value": "all"
+                                                    }, 
+                                                    {
+                                                        "name": "severity_comparison", 
+                                                        "value": ">"
+                                                    }, 
+                                                    {
+                                                        "name": "severity", 
+                                                        "value": "medium"
+                                                    }
+                                                ], 
+                                                "trigger": "package"
+                                            }
+                                        ], 
+                                        "version": "1_0"
+                                    }
+                                ], 
+                                "version": "1_0", 
+                                "whitelisted_images": [], 
+                                "whitelists": [
+                                    {
+                                        "comment": "NVD test", 
+                                        "id": "d9e27a9b-45f2-4938-baa4-dfce6da979f1", 
+                                        "items": [
+                                            {
+                                                "gate": "vulnerabilities", 
+                                                "id": "2232c815-e9ba-46e6-ae5e-b649514484ff", 
+                                                "trigger_id": "*https://nvd*"
+                                            }
+                                        ], 
+                                        "name": "NVDTestWhitelist", 
+                                        "version": "1_0"
+                                    }
+                                ]
+                            }, 
+                            "created_at": 1597267669, 
+                            "evaluation_problems": [], 
+                            "final_action": "stop", 
+                            "final_action_reason": "policy_evaluation", 
+                            "image_digest": "sha256:3af126ec1702291a315032282a8b261d039d9f9a215ce4eccd0fe1d1f2490229", 
+                            "image_id": "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                            "last_modified": 1597267669, 
+                            "matched_blacklisted_images_rule": false, 
+                            "matched_mapping_rule": {
+                                "id": "3e98f26c-508e-4a8f-8ca1-b8a4c66a994a", 
+                                "image": {
+                                    "type": "tag", 
+                                    "value": "*"
+                                }, 
+                                "name": "default", 
+                                "policy_ids": [
+                                    "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                ], 
+                                "registry": "*", 
+                                "repository": "*", 
+                                "whitelist_ids": [
+                                    "d9e27a9b-45f2-4938-baa4-dfce6da979f1"
+                                ]
+                            }, 
+                            "matched_whitelisted_images_rule": false, 
+                            "result": {
+                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f": {
+                                    "result": {
+                                        "final_action": "stop", 
+                                        "header": [
+                                            "Image_Id", 
+                                            "Repo_Tag", 
+                                            "Trigger_Id", 
+                                            "Gate", 
+                                            "Trigger", 
+                                            "Check_Output", 
+                                            "Gate_Action", 
+                                            "Whitelisted", 
+                                            "Policy_Id"
+                                        ], 
+                                        "row_count": 146, 
+                                        "rows": [
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-sql-cli-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/bin/elasticsearch-sql-cli-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-sql-cli-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/bin/elasticsearch-sql-cli-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-cli-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-cli-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-cli-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-cli-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-core-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-core-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-core-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-core-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-geo-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-geo-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-geo-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-geo-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-launchers-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-launchers-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-launchers-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-launchers-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-plugin-classloader-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-plugin-classloader-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-plugin-classloader-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-plugin-classloader-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-secure-sm-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-secure-sm-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-secure-sm-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-secure-sm-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-x-content-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-x-content-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-x-content-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-x-content-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-plugin-cli-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/tools/plugin-cli/elasticsearch-plugin-cli-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-plugin-cli-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/tools/plugin-cli/elasticsearch-plugin-cli-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-security-cli-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/tools/security-cli/elasticsearch-security-cli-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-security-cli-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/tools/security-cli/elasticsearch-security-cli-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-dissect-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-common/elasticsearch-dissect-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-dissect-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-common/elasticsearch-dissect-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-grok-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-common/elasticsearch-grok-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-grok-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-common/elasticsearch-grok-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-14195+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-14195 - https://nvd.nist.gov/vuln/detail/CVE-2020-14195)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-14062+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-14062 - https://nvd.nist.gov/vuln/detail/CVE-2020-14062)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-14061+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-14061 - https://nvd.nist.gov/vuln/detail/CVE-2020-14061)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-14060+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-14060 - https://nvd.nist.gov/vuln/detail/CVE-2020-14060)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-11113+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-11113 - https://nvd.nist.gov/vuln/detail/CVE-2020-11113)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-11112+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-11112 - https://nvd.nist.gov/vuln/detail/CVE-2020-11112)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-11111+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-11111 - https://nvd.nist.gov/vuln/detail/CVE-2020-11111)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-10969+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-10969 - https://nvd.nist.gov/vuln/detail/CVE-2020-10969)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-10968+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-10968 - https://nvd.nist.gov/vuln/detail/CVE-2020-10968)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-10673+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-10673 - https://nvd.nist.gov/vuln/detail/CVE-2020-10673)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-10672+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-10672 - https://nvd.nist.gov/vuln/detail/CVE-2020-10672)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-scripting-painless-spi-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/lang-painless/elasticsearch-scripting-painless-spi-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-scripting-painless-spi-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/lang-painless/elasticsearch-scripting-painless-spi-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-rest-client-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/reindex/elasticsearch-rest-client-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-rest-client-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/reindex/elasticsearch-rest-client-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-ssl-config-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/reindex/elasticsearch-ssl-config-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-ssl-config-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/reindex/elasticsearch-ssl-config-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-nio-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-core/elasticsearch-nio-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-nio-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-core/elasticsearch-nio-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-ssl-config-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-core/elasticsearch-ssl-config-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-ssl-config-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-core/elasticsearch-ssl-config-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-grok-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-ml/elasticsearch-grok-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-grok-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-ml/elasticsearch-grok-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-rest-client-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-monitoring/elasticsearch-rest-client-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-rest-client-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-monitoring/elasticsearch-rest-client-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7014+elasticsearch-rest-client-sniffer-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-monitoring/elasticsearch-rest-client-sniffer-7.6.1.jar (CVE-2020-7014 - https://nvd.nist.gov/vuln/detail/CVE-2020-7014)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-7009+elasticsearch-rest-client-sniffer-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-monitoring/elasticsearch-rest-client-sniffer-7.6.1.jar (CVE-2020-7009 - https://nvd.nist.gov/vuln/detail/CVE-2020-7009)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-20907+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2019-20907 - https://nvd.nist.gov/vuln/detail/CVE-2019-20907)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-9674+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2019-9674 - https://nvd.nist.gov/vuln/detail/CVE-2019-9674)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-5010+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2019-5010 - https://nvd.nist.gov/vuln/detail/CVE-2019-5010)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-16056+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2019-16056 - https://nvd.nist.gov/vuln/detail/CVE-2019-16056)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-13404+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2019-13404 - https://nvd.nist.gov/vuln/detail/CVE-2019-13404)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2018-14647+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2018-14647 - https://nvd.nist.gov/vuln/detail/CVE-2018-14647)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2018-1061+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2018-1061 - https://nvd.nist.gov/vuln/detail/CVE-2018-1061)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2018-1060+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2018-1060 - https://nvd.nist.gov/vuln/detail/CVE-2018-1060)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2017-17522+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2017-17522 - https://nvd.nist.gov/vuln/detail/CVE-2017-17522)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2015-5652+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2015-5652 - https://nvd.nist.gov/vuln/detail/CVE-2015-5652)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2014-1912+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2014-1912 - https://nvd.nist.gov/vuln/detail/CVE-2014-1912)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2013-1753+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2013-1753 - https://nvd.nist.gov/vuln/detail/CVE-2013-1753)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-sql-cli-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/bin/elasticsearch-sql-cli-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-cli-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-cli-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-core-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-core-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-geo-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-geo-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-launchers-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-launchers-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-plugin-classloader-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-plugin-classloader-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-secure-sm-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-secure-sm-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-x-content-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/elasticsearch-x-content-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-plugin-cli-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/tools/plugin-cli/elasticsearch-plugin-cli-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-security-cli-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/lib/tools/security-cli/elasticsearch-security-cli-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-dissect-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-common/elasticsearch-dissect-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-grok-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-common/elasticsearch-grok-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-214564+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (VULNDB-214564 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-214564)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-214563+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (VULNDB-214563 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-214563)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-210400+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (VULNDB-210400 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-210400)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-223108+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (VULNDB-223108 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-223108)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-216865+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (VULNDB-216865 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-216865)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-215426+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (VULNDB-215426 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-215426)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-210727+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (VULNDB-210727 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-210727)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-scripting-painless-spi-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/lang-painless/elasticsearch-scripting-painless-spi-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-rest-client-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/reindex/elasticsearch-rest-client-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-ssl-config-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/reindex/elasticsearch-ssl-config-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-nio-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-core/elasticsearch-nio-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-ssl-config-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-core/elasticsearch-ssl-config-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-grok-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-ml/elasticsearch-grok-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-rest-client-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-monitoring/elasticsearch-rest-client-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-226240+elasticsearch-rest-client-sniffer-7.6.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-monitoring/elasticsearch-rest-client-sniffer-7.6.1.jar (VULNDB-226240 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-226240)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-179708+guava-19.0.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-security/guava-19.0.jar (VULNDB-179708 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-179708)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-179707+guava-19.0.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-security/guava-19.0.jar (VULNDB-179707 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-179707)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-179708+guava-16.0.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-watcher/guava-16.0.1.jar (VULNDB-179708 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-179708)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-179707+guava-16.0.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-watcher/guava-16.0.1.jar (VULNDB-179707 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-179707)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-222554+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (VULNDB-222554 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-222554)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-137890+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (VULNDB-137890 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-137890)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-101383+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (VULNDB-101383 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-101383)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-101385+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (VULNDB-101385 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-101385)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-217762+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (VULNDB-217762 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-217762)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-181184+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (VULNDB-181184 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-181184)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-9548+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-9548 - https://nvd.nist.gov/vuln/detail/CVE-2020-9548)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-9547+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-9547 - https://nvd.nist.gov/vuln/detail/CVE-2020-9547)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-9546+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-9546 - https://nvd.nist.gov/vuln/detail/CVE-2020-9546)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-8840+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-8840 - https://nvd.nist.gov/vuln/detail/CVE-2020-8840)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-11620+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-11620 - https://nvd.nist.gov/vuln/detail/CVE-2020-11620)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-11619+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2020-11619 - https://nvd.nist.gov/vuln/detail/CVE-2020-11619)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-20330+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2019-20330 - https://nvd.nist.gov/vuln/detail/CVE-2019-20330)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-17531+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2019-17531 - https://nvd.nist.gov/vuln/detail/CVE-2019-17531)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-17267+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2019-17267 - https://nvd.nist.gov/vuln/detail/CVE-2019-17267)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-16943+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2019-16943 - https://nvd.nist.gov/vuln/detail/CVE-2019-16943)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-16942+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2019-16942 - https://nvd.nist.gov/vuln/detail/CVE-2019-16942)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-16335+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2019-16335 - https://nvd.nist.gov/vuln/detail/CVE-2019-16335)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-14893+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2019-14893 - https://nvd.nist.gov/vuln/detail/CVE-2019-14893)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-14892+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2019-14892 - https://nvd.nist.gov/vuln/detail/CVE-2019-14892)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-14540+jackson-databind-2.8.11.4.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/ingest-geoip/jackson-databind-2.8.11.4.jar (CVE-2019-14540 - https://nvd.nist.gov/vuln/detail/CVE-2019-14540)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-17571+log4j-1.2-api-2.11.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-core/log4j-1.2-api-2.11.1.jar (CVE-2019-17571 - https://nvd.nist.gov/vuln/detail/CVE-2019-17571)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-9948+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2019-9948 - https://nvd.nist.gov/vuln/detail/CVE-2019-9948)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-9636+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2019-9636 - https://nvd.nist.gov/vuln/detail/CVE-2019-9636)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2017-1000158+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2017-1000158 - https://nvd.nist.gov/vuln/detail/CVE-2017-1000158)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2016-5636+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2016-5636 - https://nvd.nist.gov/vuln/detail/CVE-2016-5636)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2014-4650+Python-2.7.5", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (python) - /usr/lib64/python2.7/lib-dynload/Python (CVE-2014-4650 - https://nvd.nist.gov/vuln/detail/CVE-2014-4650)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "VULNDB-220038+log4j-1.2-api-2.11.1.jar", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - /usr/share/elasticsearch/modules/x-pack-core/log4j-1.2-api-2.11.1.jar (VULNDB-220038 - http://api:8228/v1/query/vulnerabilities?id=VULNDB-220038)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-8616+bind-license", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in os package type (rpm) - bind-license (CVE-2020-8616 - https://access.redhat.com/security/cve/CVE-2020-8616)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-8617+bind-license", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in os package type (rpm) - bind-license (CVE-2020-8617 - https://access.redhat.com/security/cve/CVE-2020-8617)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-12749+dbus", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in os package type (rpm) - dbus (CVE-2019-12749 - https://access.redhat.com/security/cve/CVE-2019-12749)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2019-12749+dbus-libs", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in os package type (rpm) - dbus-libs (CVE-2019-12749 - https://access.redhat.com/security/cve/CVE-2019-12749)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "GHSA-h822-r4r5-v8jg+jackson-databind", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - jackson-databind (GHSA-h822-r4r5-v8jg - https://github.com/advisories/GHSA-h822-r4r5-v8jg)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "GHSA-gww7-p5w4-wrfv+jackson-databind", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - jackson-databind (GHSA-gww7-p5w4-wrfv - https://github.com/advisories/GHSA-gww7-p5w4-wrfv)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "GHSA-gjmw-vf9h-g25v+jackson-databind", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - jackson-databind (GHSA-gjmw-vf9h-g25v - https://github.com/advisories/GHSA-gjmw-vf9h-g25v)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "GHSA-6fpp-rgj9-8rwc+jackson-databind", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - jackson-databind (GHSA-6fpp-rgj9-8rwc - https://github.com/advisories/GHSA-6fpp-rgj9-8rwc)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "GHSA-4w82-r329-3q67+jackson-databind", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - jackson-databind (GHSA-4w82-r329-3q67 - https://github.com/advisories/GHSA-4w82-r329-3q67)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "GHSA-85cw-hj65-qqv9+jackson-databind", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - jackson-databind (GHSA-85cw-hj65-qqv9 - https://github.com/advisories/GHSA-85cw-hj65-qqv9)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "GHSA-gwp4-hfv6-p7hw+jackson-databind", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - jackson-databind (GHSA-gwp4-hfv6-p7hw - https://github.com/advisories/GHSA-gwp4-hfv6-p7hw)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "GHSA-cf6r-3wgc-h863+jackson-databind", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - jackson-databind (GHSA-cf6r-3wgc-h863 - https://github.com/advisories/GHSA-cf6r-3wgc-h863)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2016-5131+libxml2", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in os package type (rpm) - libxml2 (CVE-2016-5131 - https://access.redhat.com/security/cve/CVE-2016-5131)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2017-15412+libxml2", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in os package type (rpm) - libxml2 (CVE-2017-15412 - https://access.redhat.com/security/cve/CVE-2017-15412)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2016-5131+libxml2-python", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in os package type (rpm) - libxml2-python (CVE-2016-5131 - https://access.redhat.com/security/cve/CVE-2016-5131)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2017-15412+libxml2-python", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in os package type (rpm) - libxml2-python (CVE-2017-15412 - https://access.redhat.com/security/cve/CVE-2017-15412)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "GHSA-f3j5-rmmp-3fc5+jackson-databind", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "CRITICAL Vulnerability found in non-os package type (java) - jackson-databind (GHSA-f3j5-rmmp-3fc5 - https://github.com/advisories/GHSA-f3j5-rmmp-3fc5)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "GHSA-mm9x-g8pc-w292+netty-handler", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - netty-handler (GHSA-mm9x-g8pc-w292 - https://github.com/advisories/GHSA-mm9x-g8pc-w292)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "GHSA-mm9x-g8pc-w292+netty-handler", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in non-os package type (java) - netty-handler (GHSA-mm9x-g8pc-w292 - https://github.com/advisories/GHSA-mm9x-g8pc-w292)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-12049+dbus-libs", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in os package type (rpm) - dbus-libs (CVE-2020-12049 - https://access.redhat.com/security/cve/CVE-2020-12049)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ], 
+                                            [
+                                                "ebe2f6483e8697ab5e1510c5cc42a68ffd49cab224f92af68e80eebcafab172f", 
+                                                "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                                                "CVE-2020-12049+dbus", 
+                                                "vulnerabilities", 
+                                                "package", 
+                                                "HIGH Vulnerability found in os package type (rpm) - dbus (CVE-2020-12049 - https://access.redhat.com/security/cve/CVE-2020-12049)", 
+                                                "stop", 
+                                                false, 
+                                                "064dd2d3-6510-4ebd-9492-8c2c4defedf4"
+                                            ]
+                                        ]
+                                    }
+                                }, 
+                                "policy_data": [], 
+                                "policy_name": "", 
+                                "whitelist_data": [], 
+                                "whitelist_names": []
+                            }, 
+                            "status": "fail", 
+                            "tag": "docker.io/jvalance/elasticsearch:7.6.1-testing", 
+                            "user_id": "admin"
+                        }
+                    }, 
+                    "last_evaluation": "2020-08-12T21:30:46Z", 
+                    "policyId": "e0c047f7-7d7b-4e7c-b632-003dd4170441", 
+                    "status": "fail"
+                }
+            ]
+        }
+    }
+]
