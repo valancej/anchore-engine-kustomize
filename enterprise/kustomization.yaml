@@ -1,6 +1,6 @@
 namespace: anchore
 
 resources:
-  - template.yaml
+  - enterprise-template.yaml
 
 
